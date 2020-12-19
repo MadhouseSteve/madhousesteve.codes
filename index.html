@@ -21,6 +21,9 @@
         margin: 0;
         min-height: 100vh;
         background-color: #01107c;
+        text-align: center;
+        padding: 0;
+        position: relative;
       }
 
       img {
@@ -37,17 +40,20 @@
       }
 
       main {
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: 33% 33% 33%;
-        column-gap: 3em;
-        max-width: 150ch;
+        display: inline-block;
       }
 
-      @media (max-width: 900px) {
-        main {
-          display: block;
-        }
+      h1 {
+        padding: 0;
+        margin: 0 0 0.5em;
+      }
+
+      section {
+        width: 60ch;
+        display: inline-block;
+        vertical-align: top;
+        text-align: left;
+        padding: 2em;
       }
 
       header,
@@ -55,9 +61,21 @@
         text-align: center;
       }
 
+      footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+      }
+
       a {
         text-decoration: none;
         border-bottom: 1px dotted white;
+      }
+
+      footer a {
+        margin: 0 1em;
       }
 
       a:hover {
@@ -107,26 +125,26 @@
         </p>
         <ul>
           <li>
-            <a href="https://github.com/ClawBanBot">Claw Ban Bot</a> - A bot to
-            help moderate Twitch chat and auto-ban people across a network of
-            channels.
+            <a href="https://github.com/ClawBanBot">Claw Ban Bot</a>
+            A bot to help moderate Twitch chat and auto-ban people across a
+            network of channels.
           </li>
           <li>
-            <a href="https://github.com/madhouseminers">MadhouseMiners</a> - A
-            minecraft network control system, interaction controls, and
+            <a href="https://github.com/madhouseminers">MadhouseMiners</a>
+            A minecraft network control system, interaction controls, and
             front-end website
           </li>
           <li>
-            <a href="https://github.com/MadhouseSteve/fatcat">FatCat</a> - An
-            opinionated, full-stack framework written in TypeScript, Svelte, and
-            using PostGres and GraphQL
+            <a href="https://github.com/MadhouseSteve/fatcat">FatCat</a>
+            An opinionated, full-stack framework written in TypeScript, Svelte,
+            and using PostGres and GraphQL
           </li>
           <li>
             <a href="https://github.com/MadhouseSteve/madhouse_steve_tmi"
               >Rust Twitch</a
             >
-            - A set of libs in Rustlang to interact with Twitch in a more
-            painless way
+            A set of libs in Rustlang to interact with Twitch in a more painless
+            way
           </li>
         </ul>
       </section>
@@ -141,9 +159,9 @@
     </main>
     <footer>
       <p>
-        <a href="https://twitch.tv/MadhouseSteve">Twitch</a> ::
-        <a href="https://github.com/MadhouseSteve">GitHub</a> ::
-        <a href="https://twitter.com/MadhouseSteve">Twitter</a> ::
+        <a href="https://twitch.tv/MadhouseSteve">Twitch</a>
+        <a href="https://github.com/MadhouseSteve">GitHub</a>
+        <a href="https://twitter.com/MadhouseSteve">Twitter</a>
         <a href="https://discord.gg/zVrZBVC3bN">Discord</a>
       </p>
     </footer>
