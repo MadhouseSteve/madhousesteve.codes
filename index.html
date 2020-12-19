@@ -3,41 +3,137 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The homepage for MadhouseSteve - Streamer, open-source contributor, manager, leader"
+    />
     <title>MadhouseSteve</title>
     <style>
       * {
         font-family: "Courier New", Courier, monospace;
         box-sizing: border-box;
+        color: white;
+        background-color: #01107c;
       }
 
       body {
-        text-align: center;
         padding: 2em;
         margin: 0;
         min-height: 100vh;
-        background-color: #555555;
-        color: white;
       }
 
       img {
-        border-radius: 50%;
         max-width: 200px;
       }
 
       ul {
         display: inline-block;
       }
+
+      li {
+        text-align: left;
+      }
+
+      main {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        column-gap: 3em;
+        max-width: 150ch;
+      }
+
+      @media (max-width: 900px) {
+        main {
+          display: block;
+        }
+      }
+
+      header,
+      footer {
+        text-align: center;
+      }
     </style>
   </head>
   <body>
-    <img src="/MHSBlueLOGO.png" alt="Madhouse Steve Logo" />
-    <p>
-        Upcoming blog topics!
+    <header>
+      <img
+        src="/MHSBlueLOGO.png"
+        alt="Madhouse Steve Logo"
+        height="200"
+        width="200"
+        srcset="
+          /MHSBlueLOGO.png,
+          /MHSBlueLOGO@2x.png 2x,
+          /MHSBlueLOGO@3x.png 3x
+        "
+      />
+      <h1>Welcome to the Madhouse!</h1>
+    </header>
+    <main>
+      <div class="col">
+        <h2>About Me</h2>
+        <p>I'm a manager, an engineer, a streamer, a husband, a grandad.</p>
+        <p>
+          Over 20 years experience as a software engineer, working mostly in the
+          web. Now I spend my time managing teams during the day, and streaming
+          during the evenings and weekend, helping improve the web for everyone.
+        </p>
+        <p>The things that make me tick:</p>
         <ul>
-            <li>How to be an awesome manager</li>
-            <li>Why engineering quality matters</li>
-            <li>Accessibility is more than being accessible</li>
+          <li>Diversity</li>
+          <li>Inclusivity</li>
+          <li>Accessibility</li>
+          <li>Psychological Safety</li>
+          <li>Quality</li>
+          <li>Fail fast, learn fast</li>
         </ul>
-    </p>
+      </div>
+      <div class="col">
+        <h2>Projects</h2>
+        <p>
+          I've got a few open-source projects on the go, all at varying degrees
+          of completeness (or abandoness?)
+        </p>
+        <ul>
+          <li>
+            <a href="https://github.com/ClawBanBot">Claw Ban Bot</a> - A bot to
+            help moderate Twitch chat and auto-ban people across a network of
+            channels.
+          </li>
+          <li>
+            <a href="https://github.com/madhouseminers">MadhouseMiners</a> - A
+            minecraft network control system, interaction controls, and
+            front-end website
+          </li>
+          <li>
+            <a href="https://github.com/MadhouseSteve/fatcat">FatCat</a> - An
+            opinionated, full-stack framework written in TypeScript, Svelte, and
+            using PostGres and GraphQL
+          </li>
+          <li>
+            <a href="https://github.com/MadhouseSteve/madhouse_steve_tmi"
+              >Rust Twitch</a
+            >
+            - A set of libs in Rustlang to interact with Twitch in a more
+            painless way
+          </li>
+        </ul>
+      </div>
+      <div class="col">
+        <h2>Upcoming blog topics!</h2>
+        <ul>
+          <li>How to be an awesome manager</li>
+          <li>Why engineering quality matters</li>
+          <li>Accessibility is more than being accessible</li>
+        </ul>
+      </div>
+    </main>
+    <footer>
+      <p>
+        <a href="https://twitch.tv/MadhouseSteve">Twitch</a> ::
+        <a href="https://github.com/MadhouseSteve">GitHub</a> ::
+        <a href="https://twitter.com/MadhouseSteve">Twitter</a>
+      </p>
+    </footer>
   </body>
 </html>
