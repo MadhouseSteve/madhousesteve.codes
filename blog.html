@@ -26,8 +26,22 @@
         position: relative;
       }
 
-      img {
+      a {
+        text-decoration: none;
+        border-bottom: 1px dotted white;
+      }
+      a:hover {
+        border-bottom-style: solid;
+      }
+
+      header img {
         max-width: 200px;
+      }
+      header a {
+        border: none;
+      }
+      header a:hover {
+        border: none;
       }
 
       ul {
@@ -69,11 +83,6 @@
         text-align: center;
       }
 
-      a {
-        text-decoration: none;
-        border-bottom: 1px dotted white;
-      }
-
       main li a {
         margin-right: 1ch;
       }
@@ -81,25 +90,22 @@
       footer a {
         margin: 0 1em;
       }
-
-      a:hover {
-        border-bottom-style: solid;
-      }
     </style>
   </head>
   <body>
     <header>
-      <img
-        src="/MHSBlueLOGO.png"
-        alt="Madhouse Steve Logo"
-        height="200"
-        width="200"
-        srcset="
-          /MHSBlueLOGO.png,
-          /MHSBlueLOGO@2x.png 2x,
-          /MHSBlueLOGO@3x.png 3x
-        "
-      />
+      <a href="/"
+        ><img
+          src="/MHSBlueLOGO.png"
+          alt="Madhouse Steve Logo"
+          height="200"
+          width="200"
+          srcset="
+            /MHSBlueLOGO.png,
+            /MHSBlueLOGO@2x.png 2x,
+            /MHSBlueLOGO@3x.png 3x
+          "
+      /></a>
       <h1>Upcoming blog topics!</h1>
     </header>
     <main>
@@ -116,7 +122,10 @@
         <a href="https://twitch.tv/MadhouseSteve">Twitch</a
         ><a href="https://github.com/MadhouseSteve">GitHub</a
         ><a href="https://twitter.com/MadhouseSteve">Twitter</a
-        ><a href="https://discord.gg/zVrZBVC3bN">Discord</a>
+        ><a href="https://discord.gg/zVrZBVC3bN">Discord</a
+        ><a href="https://www.linkedin.com/in/stevan-goode-2488853/"
+          >LinkedIn</a
+        >
       </p>
     </footer>
   </body>
